@@ -79,3 +79,37 @@ ORDER BY
 Image 4
 ![Screenshot (38)](https://github.com/MohamedAlimamyJawah/Course-Assignment-Project-For-the-course-Developing-Queries-with-Microsoft-SQL-Server/assets/131864852/6659b5ae-c2af-4dad-8cc5-6996ed53d379)
 
+
+Question 5
+--Create a list of product segmentation by defining criteria that place each item in a predefined segment as follows.
+--If The price is less than £200 then low value. 
+--If the price is between £201 and £750 then mid value.
+--If between £750 and £1250 then mid to high value else higher value. 
+--Filter the results only for black, silver, and red color products.
+
+SELECT *
+FROM Production.Product
+
+SELECT 
+    ProductID, 
+    Name, 
+    Color, 
+    ListPrice,
+    CASE
+        WHEN ListPrice < 200 THEN 'Low Value'
+        WHEN ListPrice BETWEEN 201 AND 750 THEN 'Mid Value'
+        WHEN ListPrice BETWEEN 751 AND 1250 THEN 'Mid to High Value'
+        ELSE 'High Value'
+    END AS ValueSegment
+FROM 
+    Production.Product
+WHERE 
+    Color IN ('Black', 'Silver', 'Red')
+ORDER BY 
+    ValueSegment;
+    
+Image 6
+
+    ![Screenshot (40)](https://github.com/MohamedAlimamyJawah/Course-Assignment-Project-For-the-course-Developing-Queries-with-Microsoft-SQL-Server/assets/131864852/f976915d-f58b-4f50-9b80-86467d20866a)
+
+
