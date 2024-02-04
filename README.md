@@ -110,6 +110,27 @@ ORDER BY
     
 Image 6
 
-    ![Screenshot (40)](https://github.com/MohamedAlimamyJawah/Course-Assignment-Project-For-the-course-Developing-Queries-with-Microsoft-SQL-Server/assets/131864852/f976915d-f58b-4f50-9b80-86467d20866a)
+    ![Screenshot (40)](https://github.com/MohamedAlimamyJawah/Course-Assignment-Project-For-the-course-
+    Developing-Queries-with-Microsoft-SQL-Server/assets/131864852/f976915d-f58b-4f50-9b80-86467d20866a)
 
+
+
+Question 7
+--Use the employee table and calculate the ages of each employee at the time of hiring.
+
+SELECT * 
+FROM HumanResources.Employee
+
+SELECT 
+    BusinessEntityID, 
+    Gender,  
+    BirthDate, 
+    HireDate, 
+    DATEDIFF(YEAR, BirthDate, HireDate) AS AgeAtHiring
+FROM 
+    HumanResources.Employee;
+
+Image 7
+
+![Screenshot (40)](https://github.com/MohamedAlimamyJawah/Course-Assignment-Project-For-the-course-Developing-Queries-with-Microsoft-SQL-Server/assets/131864852/2abb7887-1ed6-403c-bc0a-4bad2aff7d78)
 
