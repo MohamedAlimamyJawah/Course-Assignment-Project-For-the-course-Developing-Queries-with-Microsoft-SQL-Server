@@ -27,7 +27,8 @@ WHERE
     ListPrice BETWEEN 75 AND 750
 ORDER BY 
     ListPrice DESC;
-Image 1
+    
+Image 2
 
 ![Screenshot (35)](https://github.com/MohamedAlimamyJawah/Course-Assignment-Project-For-the-course-Developing-Queries-with-Microsoft-SQL-Server/assets/131864852/69a4a4ee-dd6c-4dfb-9668-08b1692d957d)
 
@@ -55,7 +56,7 @@ WHERE
 ORDER BY 
     HireDate;
     
-Image 2
+Image 3
 
 ![Screenshot (37)](https://github.com/MohamedAlimamyJawah/Course-Assignment-Project-For-the-course-Developing-Queries-with-Microsoft-SQL-Server/assets/131864852/383724ac-b946-4c54-8bd6-ae3d50520e70)
 
@@ -75,6 +76,6 @@ WHERE
 ORDER BY 
     ListPrice DESC;
 
-Image 3
+Image 4
 ![Screenshot (38)](https://github.com/MohamedAlimamyJawah/Course-Assignment-Project-For-the-course-Developing-Queries-with-Microsoft-SQL-Server/assets/131864852/6659b5ae-c2af-4dad-8cc5-6996ed53d379)
 
